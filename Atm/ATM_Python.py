@@ -1,8 +1,9 @@
 class Atm:
-    __counter=0
+    __counter=0#creating a serial number for each
     def __init__(self):
         self.__pin=""
         self.__balance=100000
+        #process to get serial number for each object from this class
         self.serial=Atm.__counter
         Atm.__counter+=1
         self.menu()
@@ -76,5 +77,5 @@ class Atm:
         print("new pin setted")
         self.menu()
 
-sbi=Atm()
+sbi=Atm()#intialisation/to run
 
