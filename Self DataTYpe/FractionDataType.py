@@ -33,3 +33,8 @@ frac=Fraction(5,6)
 frac2=Fraction(2,3)
 print(frac)
 print(frac2)
+
+print(frac+frac2)
+print(frac-frac2)
+print(frac*frac2)
+print(frac/frac2)
