@@ -8,3 +8,13 @@ class Fraction:
     
     def __str__(self):
         return "{}/{}".format(self.num,self.den)
+    
+    def __add__(self,other):
+        tempNum=self.num*other.den +self.den*other.num
+        tempDen= self.den*other.den
+        return "{}/{}".format(tempNum,tempDen)
+    
+    def __sub__(self,other):
+        tempNum=self.num*other.den - self.den*other.num
+        tempDen= self.den*other.den
+        return "{}/{}".format(tempNum,tempDen)
