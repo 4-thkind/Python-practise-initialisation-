@@ -28,3 +28,8 @@ class Fraction:
         tempNum=self.num*other.den
         tempDen= self.den*other.num
         return "{}/{}".format(tempNum,tempDen)
+
+frac=Fraction(5,6)
+frac2=Fraction(2,3)
+print(frac)
+print(frac2)
