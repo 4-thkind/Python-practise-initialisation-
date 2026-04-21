@@ -18,3 +18,13 @@ class Fraction:
         tempNum=self.num*other.den - self.den*other.num
         tempDen= self.den*other.den
         return "{}/{}".format(tempNum,tempDen)
+    
+    def __mul__(self,other):
+        tempNum=self.num*other.num
+        tempDen= self.den*other.den
+        return "{}/{}".format(tempNum,tempDen)
+    
+    def __truediv__(self,other):
+        tempNum=self.num*other.den
+        tempDen= self.den*other.num
+        return "{}/{}".format(tempNum,tempDen)
