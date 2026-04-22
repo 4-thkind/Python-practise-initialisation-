@@ -7,5 +7,16 @@ root.title("First Login Window")
 root.geometry("500x650")
 root.configure(background="brown")
 
+gif = Image.open(r"C:\codesss\spiderman-superhero.gif")
+frames = [ImageTk.PhotoImage(frame.resize((300,200))) for frame in ImageSequence.Iterator(gif)]
+
+label = Label(root)
+label.pack(pady=(20,20))
+
+def animate(i=0):
+    label.config(image=frames[i])
+    root.after(100, animate, (i+1) % len(frames))
+
+animate()
 
 root.mainloop() 
