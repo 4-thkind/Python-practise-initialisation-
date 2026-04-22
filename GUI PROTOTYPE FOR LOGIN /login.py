@@ -26,6 +26,10 @@ email_label=Label(root,text="Email",fg="white",bg="brown",font=("verdana",12))
 email_label.pack(pady=(20,5))
 email_label.config(font=(14))
 
+email_input=Entry(root,width=30,justify="center",font=("verdana",14),fg="red",bg="black",bd=5, relief="groove",insertbackground="red", 
+                  insertwidth=2 ,highlightcolor="orange", highlightthickness=4,insertofftime=300, insertontime=300)
+email_input.pack(ipady=6,pady=(1,12))
+
 pass_label=Label(root,text="Password",fg="white",bg="brown",font=("verdana",12))
 pass_label.pack(pady=(20,5))
 pass_label.config(font=(14))
