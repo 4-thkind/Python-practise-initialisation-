@@ -44,6 +44,16 @@ login_button.pack(ipady=6,ipadx=6,pady=(10,10))
 login_button.config(font=('verdana',12))
 
 
+def function():
+    email=email_input.get()
+    password=pass_input.get()
+
+    if email=="utkarsh" and password=="123":
+        messagebox.showinfo("correct","Login Successfull")
+
+    else:
+        messagebox.showerror("Wrong","wrong password or email")
+
 
 
 
