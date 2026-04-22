@@ -19,4 +19,12 @@ def animate(i=0):
 
 animate()
 
+text_label = Label(root, text="SPIDER-MAN🕷",fg="black",bg="brown" ,font=("Verdana", 26))
+text_label.pack(pady=(10,10))
+
+
+
+
+
+
 root.mainloop() 
