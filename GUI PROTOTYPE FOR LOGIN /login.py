@@ -39,6 +39,12 @@ pass_input=Entry(root,width=30,show="*",justify="center",font=("verdana",14),fg=
 pass_input.pack(ipady=6,pady=(1,12))
 
 
+login_button=Button(root,text="Login",fg="red",bg="black",highlightcolor="orange",highlightthickness=4, command=function)
+login_button.pack(ipady=6,ipadx=6,pady=(10,10))
+login_button.config(font=('verdana',12))
+
+
+
 
 
 root.mainloop() 
