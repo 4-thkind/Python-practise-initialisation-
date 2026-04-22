@@ -34,6 +34,10 @@ pass_label=Label(root,text="Password",fg="white",bg="brown",font=("verdana",12))
 pass_label.pack(pady=(20,5))
 pass_label.config(font=(14))
 
+pass_input=Entry(root,width=30,show="*",justify="center",font=("verdana",14),fg="red",bg="black",bd=5, relief="groove",insertbackground="red", 
+                  insertwidth=2 ,highlightcolor="orange", highlightthickness=4,insertofftime=300, insertontime=300)
+pass_input.pack(ipady=6,pady=(1,12))
+
 
 
 
