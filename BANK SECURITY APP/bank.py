@@ -121,3 +121,17 @@ login_button=Button(root,text="Login",fg="red",bg="black",highlightcolor="orange
 login_button.pack(ipady=6,ipadx=6,pady=(10,10))
 login_button.config(font=('verdana',12))
 
+def function():
+    email=email_input.get()
+    password=pass_input.get()
+
+    if email=="utkarsh" and password=="123":
+        messagebox.showinfo("correct",''' login successful
+                                        WELCOME TO THE BANK
+                                       PLEASE MOVE TOWARDS TERMINAL''')
+        sbi=Atm()
+        
+    else:
+        messagebox.showerror("Wrong","wrong passoword or email")
+
+root.mainloop()
