@@ -116,3 +116,8 @@ pass_label.config(font=(14))
 pass_input=Entry(root,width=30,show="*",justify="center",font=("verdana",14),fg="red",bg="black",bd=5, relief="groove",insertbackground="red", 
                   insertwidth=2 ,highlightcolor="orange", highlightthickness=4,insertofftime=300, insertontime=300)
 pass_input.pack(ipady=6,pady=(1,12))
+
+login_button=Button(root,text="Login",fg="red",bg="black",highlightcolor="orange",highlightthickness=4, command=function)
+login_button.pack(ipady=6,ipadx=6,pady=(10,10))
+login_button.config(font=('verdana',12))
+
