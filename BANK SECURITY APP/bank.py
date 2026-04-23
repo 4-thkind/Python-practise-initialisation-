@@ -84,3 +84,15 @@ root = Tk()
 root.title("First Login Window")
 root.geometry("500x750")
 root.configure(background="brown")
+
+gif = Image.open(r"/workspaces/Python-practise-initialisation-/BANK SECURITY APP/BANK INTERFACE.gif")
+frames = [ImageTk.PhotoImage(frame.resize((250,300))) for frame in ImageSequence.Iterator(gif)]
+
+label = Label(root)
+label.pack(pady=(20,20))
+
+def animate(i=0):
+    label.config(image=frames[i])
+    root.after(50, animate, (i+1) % len(frames))
+
+animate()
