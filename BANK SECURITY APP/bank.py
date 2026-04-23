@@ -78,3 +78,9 @@ class Atm:
         self.check_pin()
         print("card number is:",self.CARD_NO)
         self.menu()
+
+#creating GUI
+root = Tk()
+root.title("First Login Window")
+root.geometry("500x750")
+root.configure(background="brown")
