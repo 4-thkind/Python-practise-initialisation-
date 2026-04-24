@@ -22,7 +22,7 @@ animate()
 text_label = Label(root, text="SPIDER-MAN🕷",fg="black",bg="brown" ,font=("Verdana", 26))
 text_label.pack(pady=(10,10))
 
-email_label=Label(root,text="Email",fg="white",bg="brown",font=("verdana",12))
+email_label=Label(root,text="UserName",fg="white",bg="brown",font=("verdana",12))
 email_label.pack(pady=(20,5))
 email_label.config(font=(14))
 
@@ -53,7 +53,6 @@ def function():
 
     else:
         messagebox.showerror("Wrong","wrong password or email")
-
 
 
 
