@@ -22,3 +22,7 @@ btn8.config(font=('verdana',14))
 btn9 = Button(root,text='9',bg='#00a65a',fg='white',width=5,height=2)
 btn9.grid(row=1,column=2)
 btn9.config(font=('verdana',14))
+
+btn_add = Button(root,text='+',bg='#00a65a',fg='white',width=5,height=2)
+btn_add.grid(row=1,column=3)
+btn_add.config(font=('verdana',14))
