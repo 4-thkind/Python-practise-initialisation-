@@ -29,6 +29,21 @@ class Fraction:
         tempDen= self.den*other.num
         return "{}/{}".format(tempNum,tempDen)
 
+    #the output is not in simplied form, so adding a new function that returns output in simplified form
+
+    def simplify(self,n,d):
+        def gcd(a,b):
+            while b:
+                a,b = b,a%b
+            return a
+        
+        common=gcd(n,d)
+        numerator=n//common
+        denominator=d//common
+        
+        return numerator,denominator
+
+
 frac=Fraction(5,6)
 frac2=Fraction(2,3)
 print(frac)
