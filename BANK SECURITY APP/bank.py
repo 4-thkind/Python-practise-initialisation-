@@ -129,6 +129,7 @@ def function():
         messagebox.showinfo("correct",''' login successful
                                         WELCOME TO THE BANK
                                        PLEASE MOVE TOWARDS TERMINAL''')
+        root.withdraw()
         sbi=Atm()
         
     else:
