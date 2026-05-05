@@ -7,27 +7,28 @@ class Fraction:
         self.den=d
     
     def __str__(self):
-        return "{}/{}".format(self.num,self.den)
+        return "{}/{}".format(*self.simplify(self.num,self.den))
+    
     
     def __add__(self,other):
         tempNum=self.num*other.den +self.den*other.num
         tempDen= self.den*other.den
-        return "{}/{}".format(tempNum,tempDen)
+        return "{}/{}".format(*self.simplify(tempNum,tempDen))
     
     def __sub__(self,other):
         tempNum=self.num*other.den - self.den*other.num
         tempDen= self.den*other.den
-        return "{}/{}".format(tempNum,tempDen)
+        return "{}/{}".format(*self.simplify(tempNum,tempDen))
     
     def __mul__(self,other):
         tempNum=self.num*other.num
         tempDen= self.den*other.den
-        return "{}/{}".format(tempNum,tempDen)
+        return "{}/{}".format(*self.simplify(tempNum,tempDen))
     
     def __truediv__(self,other):
         tempNum=self.num*other.den
         tempDen= self.den*other.num
-        return "{}/{}".format(tempNum,tempDen)
+        return "{}/{}".format(*self.simplify(tempNum,tempDen))
 
     #the output is not in simplied form, so adding a new function that returns output in simplified form
 
