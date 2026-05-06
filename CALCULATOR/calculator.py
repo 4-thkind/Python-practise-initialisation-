@@ -66,3 +66,7 @@ btn_clr.config(font=('verdana',14))
 btn0 = Button(root,text='0',bg='#00a65a',fg='white',width=5,height=2,command=lambda :get_digit(0))
 btn0.grid(row=4,column=1)
 btn0.config(font=('verdana',14))
+
+btn_equals = Button(root,text='=',bg='#00a65a',fg='white',width=5,height=2,command=get_result)
+btn_equals.grid(row=4,column=2)
+btn_equals.config(font=('verdana',14))
