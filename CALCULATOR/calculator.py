@@ -54,3 +54,8 @@ btn2.config(font=('verdana',14))
 btn3 = Button(root,text='3',bg='#00a65a',fg='white',width=5,height=2,command=lambda :get_digit(3))
 btn3.grid(row=3,column=2)
 btn3.config(font=('verdana',14))
+
+btn_mul = Button(root,text='*',bg='#00a65a',fg='white',width=5,height=2,command=lambda :get_operator('*'))
+btn_mul.grid(row=3,column=3)
+btn_mul.config(font=('verdana',14))
+
