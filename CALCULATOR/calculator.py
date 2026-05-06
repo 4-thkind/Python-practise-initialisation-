@@ -62,3 +62,7 @@ btn_mul.config(font=('verdana',14))
 btn_clr = Button(root,text='C',bg='#00a65a',fg='white',width=5,height=2,command=lambda :clear())
 btn_clr.grid(row=4,column=0)
 btn_clr.config(font=('verdana',14))
+
+btn0 = Button(root,text='0',bg='#00a65a',fg='white',width=5,height=2,command=lambda :get_digit(0))
+btn0.grid(row=4,column=1)
+btn0.config(font=('verdana',14))
