@@ -59,3 +59,6 @@ btn_mul = Button(root,text='*',bg='#00a65a',fg='white',width=5,height=2,command=
 btn_mul.grid(row=3,column=3)
 btn_mul.config(font=('verdana',14))
 
+btn_clr = Button(root,text='C',bg='#00a65a',fg='white',width=5,height=2,command=lambda :clear())
+btn_clr.grid(row=4,column=0)
+btn_clr.config(font=('verdana',14))
