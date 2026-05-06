@@ -26,3 +26,15 @@ btn9.config(font=('verdana',14))
 btn_add = Button(root,text='+',bg='#00a65a',fg='white',width=5,height=2)
 btn_add.grid(row=1,column=3)
 btn_add.config(font=('verdana',14))
+
+btn4 = Button(root,text='4',bg='#00a65a',fg='white',width=5,height=2,command=lambda :get_digit(4))
+btn4.grid(row=2,column=0)
+btn4.config(font=('verdana',14))
+
+btn5 = Button(root,text='5',bg='#00a65a',fg='white',width=5,height=2,command=lambda :get_digit(5))
+btn5.grid(row=2,column=1)
+btn5.config(font=('verdana',14))
+
+btn6 = Button(root,text='6',bg='#00a65a',fg='white',width=5,height=2,command=lambda :get_digit(6))
+btn6.grid(row=2,column=2)
+btn6.config(font=('verdana',14))
