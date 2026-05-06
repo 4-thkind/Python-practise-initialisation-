@@ -42,3 +42,15 @@ btn6.config(font=('verdana',14))
 btn_sub = Button(root,text='-',bg='#00a65a',fg='white',width=5,height=2,command=lambda :get_operator('-'))
 btn_sub.grid(row=2,column=3)
 btn_sub.config(font=('verdana',14))
+
+btn1 = Button(root,text='1',bg='#00a65a',fg='white',width=5,height=2,command=lambda :get_digit(1))
+btn1.grid(row=3,column=0)
+btn1.config(font=('verdana',14))
+
+btn2 = Button(root,text='2',bg='#00a65a',fg='white',width=5,height=2,command=lambda :get_digit(2))
+btn2.grid(row=3,column=1)
+btn2.config(font=('verdana',14))
+
+btn3 = Button(root,text='3',bg='#00a65a',fg='white',width=5,height=2,command=lambda :get_digit(3))
+btn3.grid(row=3,column=2)
+btn3.config(font=('verdana',14))
